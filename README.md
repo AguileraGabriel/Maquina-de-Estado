@@ -10,7 +10,7 @@ Para comenzar, se parte del estado “Inicio”, donde se cargarán los valores 
 
 ### Maquina de Estados de Sistema de Riego
 
-![./recursos/Diagrama de estados.jpg](https://github.com/AguileraGabriel/Maquina-de-Estado/blob/master/recursos/Diagrama%20de%20estados.jpg)
+![./recursos/Maquina de Estados - Sistema de Riego Automático.png](https://github.com/AguileraGabriel/Maquina-de-Estado/blob/master/recursos/Maquina%20de%20Estados%20-%20Sistema%20de%20Riego%20Autom%C3%A1tico.png)
 
 ### Condiciones
 
