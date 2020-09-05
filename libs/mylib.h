@@ -12,7 +12,6 @@ typedef enum {
     ERROR_SIN_AGUA,
     RIEGO_1,
     RIEGO_2,
-    ERROR_FATAL
 } estado_t;
 
 //Datos 
