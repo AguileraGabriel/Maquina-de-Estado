@@ -4,7 +4,6 @@
 Esta función carga los valores de los sensores de agua, temperatura, humedad y hora.
 */
 void leerSensores(datos_t * datos){
-    char aux[20];
     int count = 0;
 
     printf("\nLectura de Sensores:\n");
