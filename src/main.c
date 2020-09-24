@@ -1,12 +1,13 @@
-#include"../libs/mylib.h"
-#include"funciones.c"
+#include "../libs/definiciones.h"
+#include "../libs/utilidades.h"
+#include "../libs/funciones.h"
 
 int main(void){
     configs_t configs;
     datos_t datos;
     estado_t estado = INICIO;
 
-    static const char nombreArchivoConfig[] = "config.conf";
+    static const char direccionArchivoConfig[] = "../cfg/config.conf";
 
     printf("\n***Sistema de Riego Automatizado con Maquinas de Estados***\n");
 
@@ -14,7 +15,12 @@ int main(void){
 
     printf("Leyendo configuracion ...\n");
 
+    leerConfiguracion(&configs, direccionArchivoConfig); 
+    imprimirConfig(&configs);
+    leerSensores(&datos);
+
     while(1) {
+        imprimirDatos(&datos);
         estado = estados[estado](&configs,&datos);
     }
 

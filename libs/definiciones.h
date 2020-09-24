@@ -1,9 +1,13 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DEFINICIONES_H
+#define DEFINICIONES_H
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+
+#define MAX_CADENA_LONG 40
+#define MAX_NOMBRE_VARIABLE_LONG 30
+
+#define ERROR_STATUS -1
 
 //Estados
 typedef enum { 
@@ -31,19 +35,5 @@ typedef struct{
     unsigned int SEThoraMax;
 } configs_t;
 
-
-//Funciones
-
-char * obtenerClave (char* clave);
-void leerSensores(datos_t * datos);
-
-
-//Funciones de Estados
-
-estado_t estadoInicio (configs_t * configs, datos_t * datos);
-estado_t estadoConAgua (configs_t * configs, datos_t * datos);
-estado_t estadoErrorSinAgua (configs_t * configs, datos_t * datos);
-estado_t estadoRiego1 (configs_t * configs, datos_t * datos);
-estado_t estadoRiego2 (configs_t * configs, datos_t * datos);
 
 #endif
